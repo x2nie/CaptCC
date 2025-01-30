@@ -45,6 +45,6 @@ int main(){
 `;                              document.getElementById('code').innerText = code
 const token = tokenizer(code); document.getElementById('token').innerText = JSON.stringify(token, null, 2)
 const parsed = parser(token); document.getElementById('parsed').innerText = JSON.stringify(parsed, null, 2)
-const transformed = transformer(parsed); document.getElementById('parsed').innerText = JSON.stringify(transformed, null, 2)
+const transformed = transformer(parsed); document.getElementById('transformed').innerText = JSON.stringify(transformed, null, 2)
 const processed = processor(transformed); document.getElementById('processed').innerText = JSON.stringify(processed, null, 2)
 const generated = initGenerate(processed); document.getElementById('generated').innerText = generated
