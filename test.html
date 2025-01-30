@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    body > div {
+        margin: 5px;
+    }
+    h3 {
+        margin: 5px 0;
+        line-height: 1;
+    }
+    pre {
+        border: 1px solid blue;
+        max-height: calc(100vh - 65px);
+        overflow-y: auto;
+    }
+</style>    
+</head>
 <body>
 <script src="tokenizer.js"></script>
 <script src="parser.js"></script>
@@ -8,5 +29,14 @@
 <script src="processor.js"></script>
 <script src="verifier.js"></script>
 <script src="codeGenerator.js"></script>
+
+<div><h3>Code</h3><pre id="code"></pre></div>
+<div><h3>Token</h3><pre id="token"></pre></div>
+<div><h3>Parsed</h3><pre id="parsed"></pre></div>
+<div><h3>Transformed</h3><pre id="transformed"></pre></div>
+<div><h3>Processed</h3><pre id="processed"></pre></div>
+<div><h3>Generated</h3><pre id="generated"></pre></div>
+
+<script src="demo.js"></script>
 </body>
 </html>

@@ -24,6 +24,7 @@ function initGenerate(TheBigAST) {
   var textHeader = generateTextHeader(TheBigAST[1]);
   var compiled = textHeader + funcsAsm + dataSection;
   console.log(compiled);
+  return compiled; //x2nie
   return 0;
 }
 
